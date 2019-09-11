@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>kMeans</title>
+        <script src="plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <table style="width: 100%;">
+            <tbody>
+            <tr>
+                <td>
+                    <div id="simulation-plot"></div>
+                </td>
+                <td style="vertical-align: top; width: 300px">
+                    <div id="info">
+                        <dt>Vali parameetrid:</dt>
+                        <input id="gaussian-mean" type="number" value="1">
+                        <label>Keskmine</label>
+                        <input id="gaussian-variance" type="number" value="0.5">
+                        <label>Dispersioon</label>
+                        <input id="number-of-centroids" type="number" value="2">
+                        <label>Klastrite arv</label>
+                        <button id="set-parameters">OK</button>
+                        <button id="find-clusters">kMeans</button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <script src="main.js"></script>
+    </body>
+</html>
